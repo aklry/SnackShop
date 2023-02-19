@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品详情</title>
+		<link rel="shortcut icon" href="./img/snack.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="./css/header.css">
+		<link rel="stylesheet" href="./css/detail.css">
+		<script src="js/jQuery3.4.1.js"></script>
+		<script src="js/bootstrap.bundle.js"></script>
+	</head>
+	<body>
+		<div class="row nav-container container-fluid justify-content-between align-items-center">
+			<nav class="navbar navbar-expand-md">
+				<a role="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav">
+					<span class="navbar-toggler-icon">导航</span>
+				</a>
+				<div id="collapseNav" class="navbar-collapse collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">关于我们</a>
+							<div class="dropdown-menu">
+								<a href="about.html" class="dropdown-item">作者简介</a>
+								<div class="dropdown-divider"></div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">联系我们</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">特色服务</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">隐私政策</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">合作方</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">零食分类</a>
+							<div class="dropdown-menu">
+								<a href="list.html" class="dropdown-item">坚果</a>
+								<a href="#" class="dropdown-item">辣条</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">薯片</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">工作室介绍</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="info">
+				<ul class="navbar">
+					<li class="nav-item">
+						<a href="login.html" class="nav-link">登录</a>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:;" class="nav-link" role="button" data-toggle="modal"
+							data-target="#register">注册</a>
+					</li>
+					<li class="nav-item">
+						<a href="shopcar.html" class="nav-link">购物车</a>
+					</li>
+				</ul>
+				<div class="modal" id="register">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h6 class="modal-title">请输入你的个人信息</h6>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label for="phone">电话号码</label>
+											<input type="tel" class="form-control" id="phone" placeholder="请输入电话号码">
+										</div>
+										<div class="form-group col-md-6">
+											<label for="password">密码</label>
+											<input type="password" class="form-control" id="password"
+												placeholder="请输入密码">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="name">姓名</label>
+										<input type="text" id="name" class="form-control" placeholder="请输入你的真实姓名" />
+									</div>
+									<div class="form-group">
+										<label for="address">地址</label>
+										<input type="text" id="address" class="form-control" placeholder="地址" />
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+								<button type="button" class="btn btn-primary">注册</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主要导航栏 -->
+		<div class="header-container container-fluid m-auto mt-2 row justify-content-around align-items-center">
+			<nav class="navbar navbar-light bg-light">
+				<a href="javascript:;" class="navbar-brand">
+					<img src="img/snackBZ.jpg">
+				</a>
+				<form class="form-inline">
+					<input type="text" class="form-control mr-sm-2" type="search" placeholder="Search">
+					<button type="submit" class="btn btn-outline-success my-2 my-sm-0">Search</button>
+				</form>
+			</nav>
+		</div>
+		<div class="detail d-flex justify-content-center container m-auto">
+			<div class="d-flex flex-nowrap justify-content-center">
+				<div class="left p-1">
+					<img src="./img/persionLeft.jpg" class="d-block h-50 p-2">
+				</div>
+				<div class="product ml-3 row col-md-9">
+					<div class="productImg">
+						<img src="./img/jianguo1.webp" class="d-block p-2">
+					</div>
+					<div class="intro ml-2">
+						<div class="font-weight-bold">坚果大礼包</div>
+						<div>编号: 202111042918</div>
+						<div class="price">
+							<dl>
+								<dd>
+									现价:<strong class="text-danger">￥:39.2元/份</strong>
+									原 价:<del>￥56.0元/份</del>
+								</dd>
+								<dd>品牌:达利园</dd>
+								<dd>产地:上海</dd>
+							</dl>
+						</div>
+						<div class="action">
+							<form>
+								<div class="number row justify-content-center">
+									<div class="count mr-2">购买数量: </div>
+									<div class="num row align-items-center ml-2">
+										<button type="button" class="w-25 h-50" id="increase">+</button><input
+											type="text" class="w-25 h-50" id="pieceNum" placeholder="0" /><button
+											type="button" class="w-25 h-50" id="decrease">-</button>&nbsp;
+										<span class="unit">件</span>
+									</div>
+								</div>
+								<div class="buy m-auto">
+									<input id="addCart" class="addCart m-auto" value="加入购物车" type="submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

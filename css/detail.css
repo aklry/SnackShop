@@ -1,0 +1,62 @@
+.detail .left img,
+.detail .productImg img {
+	border-radius: 0.1875rem;
+	border: solid 0.0625rem #e4e4e4;
+}
+
+.detail .action {
+	width: 12.5rem;
+	line-height: 2.125rem;
+	padding: 0.125rem;
+	color: #333333;
+	border: 0.0625rem solid #e7dbb1;
+	background-color: #fffee6;
+}
+
+.detail .action .buy {
+	padding: 0.5rem 0.625rem 0.5rem 4.375rem;
+}
+
+.detail .action .buy .addCart {
+	width: 7.9375rem;
+	height: 2.25rem;
+	line-height: 2.125rem;
+	padding-left: 1.25rem;
+	color: #ffffff;
+	font-size: 0.9375rem;
+	font-weight: bold;
+	font-family: "Microsoft YaHei";
+	cursor: pointer;
+	border: none;
+	background: url(../img/product.gif) 0px -37.5rem no-repeat;
+}
+
+.detail .action .num input {
+	outline: none;
+	border: none;
+}
+
+.detail .action .num .unit,
+.detail .action .count {
+	color: #ccc;
+}
+
+.intro {
+	font-size: 0.875rem;
+}
+
+.detail .action .num button {
+	outline: none;
+	border: none;
+	line-height: .5;
+}
+
+@media screen and (min-width: 31.3125rem) {
+	.detail .action {
+		width: 24.5rem;
+	}
+}
+
+.table td {
+	font-size: 0.875rem;
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="shortcut icon" href="./img/snack.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/footer.css">
+		<link rel="stylesheet" href="./css/header.css">
+		<script src="./js/jQuery3.4.1.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/bootstrap.bundle.js"></script>
+	</head>
+	<body>
+		<!-- 首页简介导航栏 -->
+		<div class="row nav-container container-fluid justify-content-between align-items-center">
+			<nav class="navbar navbar-expand-md">
+				<a role="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav">
+					<span class="navbar-toggler-icon">导航</span>
+				</a>
+				<div id="collapseNav" class="navbar-collapse collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">关于我们</a>
+							<div class="dropdown-menu">
+								<a href="about.html" class="dropdown-item">作者简介</a>
+								<div class="dropdown-divider"></div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">联系我们</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">特色服务</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">隐私政策</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">合作方</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">零食分类</a>
+							<div class="dropdown-menu">
+								<a href="list.html" class="dropdown-item">坚果</a>
+								<a href="#" class="dropdown-item">辣条</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">薯片</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">工作室介绍</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="info">
+				<ul class="navbar">
+					<li class="nav-item">
+						<a href="login.html" class="nav-link">登录</a>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:;" class="nav-link" role="button" data-toggle="modal"
+							data-target="#register">注册</a>
+					</li>
+					<li class="nav-item">
+						<a href="shopcar.html" class="nav-link">购物车</a>
+					</li>
+				</ul>
+				<div class="modal" id="register">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h6 class="modal-title">请输入你的个人信息</h6>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label for="phone">电话号码</label>
+											<input type="tel" class="form-control" id="phone" placeholder="请输入电话号码">
+										</div>
+										<div class="form-group col-md-6">
+											<label for="password">密码</label>
+											<input type="password" class="form-control" id="password"
+												placeholder="请输入密码">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="name">姓名</label>
+										<input type="text" id="name" class="form-control" placeholder="请输入你的真实姓名" />
+									</div>
+									<div class="form-group">
+										<label for="address">地址</label>
+										<input type="text" id="address" class="form-control" placeholder="地址" />
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+								<button type="button" class="btn btn-primary">注册</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主要导航栏 -->
+		<div class="header-container container-fluid m-auto mt-2 row justify-content-around align-items-center">
+			<nav class="navbar navbar-light bg-light">
+				<a href="javascript:;" class="navbar-brand">
+					<img src="img/snackBZ.jpg">
+				</a>
+				<form class="form-inline">
+					<input type="text" class="form-control mr-sm-2" type="search" placeholder="Search">
+					<button type="submit" class="btn btn-outline-success my-2 my-sm-0">Search</button>
+				</form>
+			</nav>
+		</div>
+		<!-- banner -->
+		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleFade" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleFade" data-slide-to="1"></li>
+				<li data-target="#carouselExampleFade" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="./img/ls4.jpg" class="d-block w-100" />
+				</div>
+				<div class="carousel-item">
+					<img src="./img/ls5.jpg" class="d-block w-100" />
+				</div>
+				<div class="carousel-item">
+					<img src="./img/ls6.jpg" class="d-block w-100" />
+				</div>
+			</div>
+			<a class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		<!-- 零食展示坚果类 -->
+		<div class="show container mt-5">
+			<div class="row mb-2">
+				<span class="h2">坚果类</span>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<a href="detail.html"><img class="card-img-top" src="./img/jianguo1.webp"></a>
+							<div class="hidden">
+								<a href="javascript:;">找同款</a>
+								<a href="javascript:;">加入购物车</a>
+							</div>
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;58.00</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip" title="坚果零食大礼包年货礼盒装组合一整箱过年送礼春节礼品">坚果零食大礼包年货礼盒装组合一整箱过年送礼春节礼品</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/jianguo2.webp">
+							<div class="hidden">
+								<a href="javascript:;">找同款</a>
+								<a href="javascript:;">加入购物车</a>
+							</div>
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;66.5</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip" title="三只松鼠每日坚果750g混合坚果小包装30包孕妇零食干果组合大礼包">三只松鼠每日坚果750g混合坚果小包装30包孕妇零食干果组合大礼包</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/jianguo3.webp">
+							<div class="hidden">
+								<a href="javascript:;">找同款</a>
+								<a href="javascript:;">加入购物车</a>
+							</div>
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;159.00</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip" title="洽洽小黄袋每日坚果750g/30袋恰恰年货礼盒零食儿童食品混合干果">洽洽小黄袋每日坚果750g/30袋恰恰年货礼盒零食儿童食品混合干果</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/jianguo4.webp">
+							<div class="hidden">
+								<a href="javascript:;">找同款</a>
+								<a href="javascript:;">加入购物车</a>
+							</div>
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;139.00</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip" title="来伊份天天每日坚果750g乐享装囤货零食混合干果30天小包网红礼盒">来伊份天天每日坚果750g乐享装囤货零食混合干果30天小包网红礼盒</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 零食展示 -->
+		<div class="show container mt-3">
+			<div class="row mb-2">
+				<span class="h2">薯片类</span>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/shupian1.webp">
+							<div class="hidden">
+								<a href="javascript:;">找同款</a>
+								<a href="javascript:;">加入购物车</a>
+							</div>
+						</div>
+						<div class="card-body justify-content-between">
+							<div class="mb-2"><a href="javascript:;">&#165;11.90</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip" title="包邮丽丽波浪薯片烤肉番茄香辣办公室休闲零">包邮丽丽波浪薯片烤肉番茄香辣办公室休闲零</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/shupian2.webp">
+							<div class="hidden">
+								<a href="javascript:;">找同款</a>
+								<a href="javascript:;">加入购物车</a>
+							</div>
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;69.90</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip" title="乐事薯片礼盒832g(728g+104g)×1箱随机口味吃货装">乐事薯片礼盒832g(728g+104g)×1箱随机口味吃货装</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/shupian3.jpg">
+							<div class="hidden">
+								<a href="javascript:;">找同款</a>
+								<a href="javascript:;">加入购物车</a>
+							</div>
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;22.80</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip" title="【满300减210】三只松鼠肥宅鲜切饲料薯片45gx2袋_网红休闲零食">【满300减210】三只松鼠肥宅鲜切饲料薯片45gx2袋_网红休闲零食</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/shupian4.jpg">
+							<div class="hidden">
+								<a href="javascript:;">找同款</a>
+								<a href="javascript:;">加入购物车</a>
+							</div>
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;8.80</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip" title="爱尚咪咪虾条蟹味粒薯片网红爆款大礼包小零食排行榜小吃休闲食品">爱尚咪咪虾条蟹味粒薯片网红爆款大礼包小零食排行榜小吃休闲食品</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid footer">
+			<div class="row">
+				<nav class="col-md-6">
+					<ul class="navbar flex-nowrap">
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">关于我们</a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">app下载</a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">技术支持</a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">加入我们</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="right-content col-md-6">
+					<div>技术支持：3265242862@qq.com</div>
+					<div>官方技术客服微信号：19854454128</div>
+					<div>市场合作：3265242862@qq.com</div>
+					<div>商务合作：3265242862@qq.com</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$('.card-cover').on('mouseover', function() {
+				$(this).children('.card-img-top').css('opacity', 0.5)
+			}).on('mouseout', function() {
+				$(this).children('.card-img-top').css('opacity', 1)
+			})
+			$('.info .navbar li:nth-child(2) a').click(function() {
+				$('#register').modal()
+			})
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+</html>

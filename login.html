@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户登录</title>
+		<link rel="shortcut icon" href="./img/snack.png" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="./css/header.css">
+		<link rel="stylesheet" href="./css/footer.css">
+		<script src="./js/jQuery3.4.1.js"></script>
+		<script src="./js/bootstrap.bundle.js"></script>
+		<style type="text/css">
+			.card-container {
+				position: relative;
+				width: 100%;
+				height: 28.75rem;
+				margin-bottom: 1.25rem;
+				background: #FF2C4C url(img/loginbg.jpg) no-repeat;
+				background-size: contain;
+				overflow: hidden;
+			}
+
+			.card {
+				position: absolute;
+				right: 3.125rem;
+				top: 2.25rem;
+			}
+
+			@media (min-width: 37.5rem) {
+				.card {
+					width: 31.25rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="row nav-container container-fluid justify-content-between align-items-center">
+			<nav class="navbar navbar-expand-md">
+				<a role="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav">
+					<span class="navbar-toggler-icon">导航</span>
+				</a>
+				<div id="collapseNav" class="navbar-collapse collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">首页</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">关于我们</a>
+							<div class="dropdown-menu">
+								<a href="about.html" class="dropdown-item">作者简介</a>
+								<div class="dropdown-divider"></div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">联系我们</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">特色服务</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">隐私政策</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">合作方</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">零食分类</a>
+							<div class="dropdown-menu">
+								<a href="list.html" class="dropdown-item">坚果</a>
+								<a href="#" class="dropdown-item">辣条</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">薯片</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">工作室介绍</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="info">
+				<ul class="navbar">
+					<li class="nav-item">
+						<a href="javascript:;" class="nav-link" role="button" data-toggle="modal"
+							data-target="#register">注册</a>
+					</li>
+					<li class="nav-item">
+						<a href="shopcar.html" class="nav-link">购物车</a>
+					</li>
+				</ul>
+				<div class="modal" id="register">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h6 class="modal-title">请输入你的个人信息</h6>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label for="phone">电话号码</label>
+											<input type="tel" class="form-control" id="phone" placeholder="请输入电话号码">
+										</div>
+										<div class="form-group col-md-6">
+											<label for="password">密码</label>
+											<input type="password" class="form-control" id="password"
+												placeholder="请输入密码">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="name">姓名</label>
+										<input type="text" id="name" class="form-control" placeholder="请输入你的真实姓名" />
+									</div>
+									<div class="form-group">
+										<label for="address">地址</label>
+										<input type="text" id="address" class="form-control" placeholder="地址" />
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+								<button type="button" class="btn btn-primary">注册</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主要导航栏 -->
+		<div class="header-container container-fluid m-auto mt-2 row justify-content-around align-items-center">
+			<nav class="navbar navbar-light bg-light">
+				<a href="javascript:;" class="navbar-brand">
+					<img src="img/snackBZ.jpg">
+				</a>
+				<form class="form-inline">
+					<input type="text" class="form-control mr-sm-2" type="search" placeholder="Search">
+					<button type="submit" class="btn btn-outline-success my-2 my-sm-0">Search</button>
+				</form>
+			</nav>
+		</div>
+		<div class="card-container">
+			<div class="card align-content-center">
+				<div class="card-header">
+					<ul class="nav nav-tabs card-header-tabs">
+						<li class="nav-item">
+							<a href="#login" class="nav-link active" data-toggle="tab">登录</a>
+						</li>
+					</ul>
+				</div>
+				<div class="card-body tab-content">
+					<div class="tab-pane fade show active" id="login">
+						<form>
+							<div class="form-group">
+								<label for="name">用户名</label>
+								<input type="text" name="username" id="name" placeholder="请输入用户名"
+									class="form-control" />
+							</div>
+							<div class="form-group">
+								<label for="pass">密码</label>
+								<input type="text" name="password" id="pass" placeholder="请输入密码" class="form-control" />
+							</div>
+							<input type="submit" value="提交" class="btn-primary btn" />
+							<input type="reset" value="重置" class="btn-primary btn" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container-fluid footer">
+			<div class="row">
+				<nav class="col-md-6">
+					<ul class="navbar flex-nowrap">
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">关于我们</a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">app下载</a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">技术支持</a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">加入我们</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="right-content col-md-6">
+					<div>技术支持：3265242862@qq.com</div>
+					<div>官方技术客服微信号：19854454128</div>
+					<div>市场合作：3265242862@qq.com</div>
+					<div>商务合作：3265242862@qq.com</div>
+				</div>
+			</div>
+		</footer>
+		<span class="d-block mt-3 text-primary text-center">CopyRight &copy; 2020-未来 零食商城版权所有</span>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$('.info .navbar li:nth-child(2) a').click(function() {
+				$('#register').modal()
+			})
+		})
+	</script>
+</html>

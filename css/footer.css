@@ -1,0 +1,43 @@
+.footer {
+	background-color: rgb(107, 122, 147);
+}
+
+.footer .navbar li {
+	font-size: 0.875rem;
+}
+
+.footer .navbar li a {
+	display: flex;
+	font-size: 0.875rem;
+	color: #fff;
+	flex-wrap: nowrap;
+}
+
+.footer .navbar {
+	padding: 3.5rem;
+}
+
+.footer .nav-link {
+	padding: 0;
+}
+
+.right-content>div {
+	padding: .8rem;
+	font-size: 0.875rem;
+	color: #fff;
+	text-align: center;
+}
+
+@media (min-width: 37.5rem) {
+	.footer .navbar li a {
+		font-size: 1.125rem;
+		flex-wrap: wrap;
+	}
+
+	.footer .nav-link {
+		padding: 0.5rem 1rem;
+	}
+	.right-content>div {
+		font-size: 1rem;
+	}
+}

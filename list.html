@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>坚果</title>
+		<link rel="stylesheet" href="./css/bootstrap/bootstrap.css" />
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/footer.css">
+		<link rel="stylesheet" href="./css/header.css">
+		<script src="./js/jQuery3.4.1.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/bootstrap.bundle.js"></script>
+		<style type="text/css">
+			.card .card-cover {
+				overflow: hidden;
+			}
+
+			.card .card-cover img {
+				transition: transform .7s;
+			}
+
+			.card .card-cover:hover img {
+				transform: scale(1.2);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="row nav-container container-fluid justify-content-between align-items-center">
+			<nav class="navbar navbar-expand-md">
+				<a role="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapseNav">
+					<span class="navbar-toggler-icon">导航</span>
+				</a>
+				<div id="collapseNav" class="navbar-collapse collapse">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link">首页</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">关于我们</a>
+							<div class="dropdown-menu">
+								<a href="about.html" class="dropdown-item">作者简介</a>
+								<div class="dropdown-divider"></div>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">联系我们</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">特色服务</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">隐私政策</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">合作方</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">零食分类</a>
+							<div class="dropdown-menu">
+								<a href="list.html" class="dropdown-item">坚果</a>
+								<a href="#" class="dropdown-item">辣条</a>
+								<div class="dropdown-divider"></div>
+								<a href="#" class="dropdown-item">薯片</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">工作室介绍</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="info">
+				<ul class="navbar">
+					<li class="nav-item">
+						<a href="login.html" class="nav-link">登录</a>
+					</li>
+					<li class="nav-item">
+						<a href="javascript:;" class="nav-link" role="button" data-toggle="modal"
+							data-target="#register">注册</a>
+					</li>
+					<li class="nav-item">
+						<a href="shopcar.html" class="nav-link">购物车</a>
+					</li>
+				</ul>
+				<div class="modal" id="register">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h6 class="modal-title">请输入你的个人信息</h6>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label for="phone">电话号码</label>
+											<input type="tel" class="form-control" id="phone" placeholder="请输入电话号码">
+										</div>
+										<div class="form-group col-md-6">
+											<label for="password">密码</label>
+											<input type="password" class="form-control" id="password"
+												placeholder="请输入密码">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="name">姓名</label>
+										<input type="text" id="name" class="form-control" placeholder="请输入你的真实姓名" />
+									</div>
+									<div class="form-group">
+										<label for="address">地址</label>
+										<input type="text" id="address" class="form-control" placeholder="地址" />
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+								<button type="button" class="btn btn-primary">注册</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 主要导航栏 -->
+		<div class="header-container container-fluid m-auto mt-2 row justify-content-around align-items-center">
+			<nav class="navbar navbar-light bg-light">
+				<a href="javascript:;" class="navbar-brand">
+					<img src="img/snackBZ.jpg">
+				</a>
+				<form class="form-inline">
+					<input type="text" class="form-control mr-sm-2" type="search" placeholder="Search">
+					<button type="submit" class="btn btn-outline-success my-2 my-sm-0">Search</button>
+				</form>
+			</nav>
+		</div>
+		<!-- 零食展示区 -->
+		<div class="show container mt-5">
+			<div class="row">
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/jianguo5.webp">
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;58.00</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip"
+									title="坚果零食大礼包年货礼盒装组合一整箱过年送礼春节礼品">坚果零食大礼包年货礼盒装组合一整箱过年送礼春节礼品</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/jianguo6.webp">
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;66.5</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip"
+									title="三只松鼠每日坚果750g混合坚果小包装30包孕妇零食干果组合大礼包">三只松鼠每日坚果750g混合坚果小包装30包孕妇零食干果组合大礼包</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/jianguo7.webp">
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;159.00</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip"
+									title="洽洽小黄袋每日坚果750g/30袋恰恰年货礼盒零食儿童食品混合干果">洽洽小黄袋每日坚果750g/30袋恰恰年货礼盒零食儿童食品混合干果</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6 mb-3">
+					<div class="card">
+						<div class="card-cover">
+							<img class="card-img-top" src="./img/jianguo4.webp">
+						</div>
+						<div class="card-body justify-content-between align-items-center">
+							<div class="mb-2"><a href="javascript:;">&#165;139.00</a></div>
+							<div class="text-truncate"><a href="javascript:;" data-toggle="tooltip"
+									title="来伊份天天每日坚果750g乐享装囤货零食混合干果30天小包网红礼盒">来伊份天天每日坚果750g乐享装囤货零食混合干果30天小包网红礼盒</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mb-3">
+			<ul class="pagination justify-content-center align-items-center">
+				<li class="page-item"><a href="javascript:;" class="page-link">首页</a></li>
+				<li class="page-item disabled"><a href="javascript:;" class="page-link"><span
+							aria-hidden="true">&laquo;</span></a></li>
+				<li class="page-item"><a href="javascript:;" class="page-link">1</a></li>
+				<li class="page-item"><a href="javascript:;" class="page-link">2</a></li>
+				<li class="page-item"><a href="javascript:;" class="page-link">3</a></li>
+				<li class="page-item"><a href="javascript:;" class="page-link">4</a></li>
+				<li class="page-item"><a href="javascript:;" class="page-link"><span
+							aria-hidden="true">&raquo;</span></a></li>
+				<li class="page-item"><a href="javascript:;" class="page-link">尾页</a></li>
+			</ul>
+		</div>
+		<footer class="container-fluid footer">
+			<div class="row">
+				<nav class="col-md-6">
+					<ul class="navbar flex-nowrap">
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">关于我们</a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">app下载</a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">技术支持</a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">加入我们</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="right-content col-md-6">
+					<div>技术支持：3265242862@qq.com</div>
+					<div>官方技术客服微信号：19854454128</div>
+					<div>市场合作：3265242862@qq.com</div>
+					<div>商务合作：3265242862@qq.com</div>
+				</div>
+			</div>
+		</footer>
+		<span class="d-block mt-3 text-primary text-center">CopyRight &copy; 2020-未来 零食商城版权所有</span>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$('.info .navbar li:nth-child(2) a').click(function() {
+				$('#register').modal()
+			})
+		})
+	</script>
+</html>
